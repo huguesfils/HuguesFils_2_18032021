@@ -2,11 +2,9 @@ body {
     font-family: 'Raleway', sans-serif;
 }
 
-.cadres {
+.accomodations {
     display: flex;
-    flex-direction: row;
-    align-items: stretch;
-    height: 500px;
+    justify-content: space-between;
 }
 
 .cadre-left, .cadre-right {
@@ -15,16 +13,19 @@ body {
 }
 
 .cadre-left {
-    order: 0;
+    width: 600px;
+   
 }
 
 .cadre-right {
-    order: 1;
+    width: 300px;
+    order: 2;
 }
 
 .card-accommodations {
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
 .card {
@@ -32,9 +33,32 @@ body {
     width: 200px;
     background-color: white;
     border: 1px solid black;
+    margin-bottom: 20px;;
 }
 
 .card-popular {
     display: flex;
     flex-direction: column;
+}
+
+.activities{
+    display: flex;
+    justify-content: space-between;
+}
+
+.card-activity{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;;
+}
+
+.footer{
+    background-color: #F2F2F2;
+    height: 400px;
+    display:flex;
+    align-content: flex-start;
+}
+
+.about, .our-accomodations, .support {
+    margin-right: 150px;
 }
