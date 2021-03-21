@@ -1,3 +1,40 @@
-p {
-    color: red;
+body {
+    font-family: 'Raleway', sans-serif;
+}
+
+.cadres {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    height: 500px;
+}
+
+.cadre-left, .cadre-right {
+    background-color: #F2F2F2;
+    border-radius: 15px;
+}
+
+.cadre-left {
+    order: 0;
+}
+
+.cadre-right {
+    order: 1;
+}
+
+.card-accommodations {
+    display: flex;
+    flex-direction: column;
+}
+
+.card {
+    height: 100px;
+    width: 200px;
+    background-color: white;
+    border: 1px solid black;
+}
+
+.card-popular {
+    display: flex;
+    flex-direction: column;
 }
