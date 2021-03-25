@@ -1,10 +1,12 @@
 body {
     font-family: 'Raleway', sans-serif;
+    max-width: 1500px;
+    margin: auto;
 }
 
 .accomodations {
     display: flex;
-    justify-content: space-between;
+    
 }
 
 .cadre-left, .cadre-right {
@@ -12,10 +14,6 @@ body {
     border-radius: 15px;
 }
 
-.cadre-left {
-    width: 600px;
-   
-}
 
 .cadre-right {
     width: 300px;
@@ -29,6 +27,8 @@ body {
 }
 
 .card {
+    flex: 1 1 30%; /*grow | shrink | basis */
+    height: 100px;
     height: 100px;
     width: 200px;
     background-color: white;
