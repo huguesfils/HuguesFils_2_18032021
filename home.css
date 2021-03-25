@@ -2,38 +2,62 @@ body {
     font-family: 'Raleway', sans-serif;
     max-width: 1500px;
     margin: auto;
+    padding: 16px;
 }
+
+header{
+    display: flex;
+    justify-content: space-between;
+    margin-right: 0;
+}
+
+.head-title{
+    color: #0065FC;
+}
+.anchor {
+    margin-right: 30px;
+    text-decoration: none;
+}
+
+.sign{
+    background-color: transparent;
+    color: #0065FC;
+    border: none;
+    font-weight: bold;
+}
+
 
 .accomodations {
     display: flex;
-    
+    justify-content: space-between;
 }
 
 .cadre-left, .cadre-right {
     background-color: #F2F2F2;
     border-radius: 15px;
+    padding: 16px;
 }
 
 
 .cadre-right {
-    width: 300px;
-    order: 2;
+   
 }
 
 .card-accommodations {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    padding: 16px;
 }
 
 .card {
     flex: 1 1 30%; /*grow | shrink | basis */
     height: 100px; 
     height: 100px;
-    width: 200px;
+    margin: 10px;
     background-color: white;
     border: 1px solid black;
-    margin-bottom: 20px;;
+    
 }
 
 .card-popular {
