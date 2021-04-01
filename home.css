@@ -46,6 +46,7 @@ header {
     flex-direction: row;
     border-radius: 15px;
     align-items: stretch;
+    margin-bottom: 30px;
 }
 
 .search div {
@@ -60,6 +61,7 @@ header {
 }
 
 .search input {
+    margin: 0;
     border: 1px solid #eeeeee;
     border-left: 0;
     border-right: 0;
@@ -74,6 +76,7 @@ header {
 }
 
 .search button {
+    margin: 0;
     background: #1976d2;
     font-weight: medium;
     font-size: 16px;
@@ -90,9 +93,12 @@ header {
     background-color: #1565c0;
 }
 
-filters {
-    display: flex;
-    justify-content: space-evenly;
+.filters {
+    margin-bottom: 30px;
+}
+
+.filters label {
+    font-weight: bold;
 }
 
 .filtre {
@@ -104,6 +110,11 @@ filters {
     background: white;
     margin: 0 20px;
     padding: 10px 10px;
+}
+
+.infos label {
+    margin-bottom: 30px;
+    font-size: 0.9em;
 }
 
 .accomodations {
@@ -152,7 +163,6 @@ img {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    ;
 }
 
 .footer {
