@@ -15,7 +15,9 @@ header {
 }
 
 .head-title {
-    color: #0065FC;
+    height: 8%;
+    width: 8%;
+    margin-bottom: 40px;
 }
 
 .anchor {
@@ -50,8 +52,6 @@ header {
 }
 
 .search div {
-    font-family: "Font Awesome 5 Free";
-    content: "\f3c5";
     font-weight: 900;
     padding: 10px;
     text-align: center;
@@ -95,21 +95,46 @@ header {
 
 .filters {
     margin-bottom: 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
 }
 
 .filters label {
     font-weight: bold;
+    padding: 10px;
 }
 
 .filtre {
-    border-radius: 25px;
+    display: flex;
     border: 2px solid #F2F2F2;
-    text-align: center;
-    height: 40px;
+    margin-left: 20px;
+    border-radius: 25px 25px 25px 25px;
+}
+
+.filtre div {
+    border-radius: 50px;
+    color: #1976d2;
+    padding: 0.9em;
+    background: #DEEBFF;
+}
+
+.filtre button {
+    border: none;
+    background: #ffffff;
+    border-radius: 0 25px 25px 0;
     font-weight: bold;
-    background: white;
-    margin: 0 20px;
-    padding: 10px 10px;
+    padding: 10px;
+}
+
+.filtre button:focus {
+    outline: none;
+    cursor: pointer;
+}
+
+.family {
+    width: 16px;
+    text-align: center;
 }
 
 .infos label {
