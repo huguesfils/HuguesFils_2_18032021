@@ -1,7 +1,6 @@
 body {
     max-width: 1500px;
     margin: auto;
-    padding: 16px;
 }
 
 * {
@@ -23,6 +22,10 @@ header {
 .anchor {
     margin-right: 30px;
     text-decoration: none;
+}
+
+.anchor:focus {
+    border-top: #0065FC;
 }
 
 .sign {
@@ -57,7 +60,7 @@ header {
     text-align: center;
     background-color: #eeeeee;
     border-radius: 15px 0 0 15px;
-    color: rgba(0, 0, 0, 0.6);
+    color: black;
 }
 
 .search input {
@@ -137,6 +140,16 @@ header {
     text-align: center;
 }
 
+.infos {
+    display: flex;
+}
+
+.infos i {
+    margin-right: 0.5em;
+    color: #1976d2;
+    background-color: white;
+}
+
 .infos label {
     margin-bottom: 30px;
     font-size: 0.9em;
@@ -192,9 +205,15 @@ img {
 
 .footer {
     background-color: #F2F2F2;
-    height: 400px;
     display: flex;
     align-content: flex-start;
+    padding: 30px;
+    margin: 0;
+}
+
+.footer span {
+    font-weight: bold;
+    font-size: large;
 }
 
 .about,
