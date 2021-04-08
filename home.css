@@ -1,6 +1,10 @@
+.margin {
+    margin-left: 2em;
+    margin-right: 2em;
+}
+
 body {
-    max-width: 1500px;
-    margin: auto;
+    margin: 0;
 }
 
 * {
@@ -115,11 +119,16 @@ header {
     border-radius: 25px 25px 25px 25px;
 }
 
-.filtre div {
-    border-radius: 50px;
+.filtre>div {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
     color: #1976d2;
-    padding: 0.9em;
     background: #DEEBFF;
+    display: inline-block;
+    text-align: center;
+    line-height: 40px;
+    transform: scale(1.1);
 }
 
 .filtre button {
@@ -135,10 +144,11 @@ header {
     cursor: pointer;
 }
 
-.family {
+
+/*.family {
     width: 16px;
     text-align: center;
-}
+}*/
 
 .infos {
     display: flex;
@@ -187,9 +197,20 @@ img {
     border: 1px solid black;
 }
 
-.card-popular {
+.popular {
     display: flex;
     flex-direction: column;
+}
+
+.card-popular {
+    display: flex;
+    height: 90px;
+    width: 150px;
+}
+
+.card-populard img {
+    height: 30%;
+    width: 30%;
 }
 
 .activities {
