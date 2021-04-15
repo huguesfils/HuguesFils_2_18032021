@@ -11,25 +11,32 @@ body {
     font-family: 'Raleway', sans-serif;
 }
 
+nav {
+    margin-top: 30px;
+}
+
 header {
     display: flex;
     justify-content: space-between;
-    margin-right: 0;
 }
 
 .head-title {
     height: 8%;
     width: 8%;
     margin-bottom: 40px;
+    margin-top: 30px;
 }
 
 .anchor {
+    color: black;
     margin-right: 30px;
     text-decoration: none;
+    padding-top: 28px;
 }
 
 .anchor:focus {
-    border-top: #0065FC;
+    border-top: #0065FC solid 2px;
+    color: #0065FC;
 }
 
 .sign {
@@ -37,6 +44,14 @@ header {
     color: #0065FC;
     border: none;
     font-weight: bold;
+}
+
+.sign:focus {
+    outline: none;
+}
+
+.sign:active {
+    color: blue;
 }
 
 .top-text {
@@ -167,7 +182,10 @@ header {
 
 .accomodations {
     display: flex;
-    justify-content: space-between;
+}
+
+.cadre-left label {
+    font-weight: bold;
 }
 
 .cadre-left,
@@ -177,24 +195,45 @@ header {
     padding: 16px;
 }
 
-.card-accommodations {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    padding: 16px;
+.cadre-right {
+    margin-left: 50px;
 }
 
-img {
-    height: 100%;
+.card-accommodations {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding-top: 20px;
+}
+
+.card-accommodations img {
+    height: 60%;
     width: 100%;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    object-fit: cover;
 }
 
 .card {
-    height: 90px;
-    width: 150px;
+    height: 180px;
+    width: calc(33% - 60px);
     margin: 10px;
     background-color: white;
-    border: 1px solid black;
+    border: 4px solid white;
+    border-radius: 15px;
+    min-width: 150px;
+}
+
+.card h1 {
+    font-size: 15px;
+    font-weight: bold;
+    margin: 5px;
+}
+
+.card div {
+    font-size: 13px;
+    margin-left: 5px;
 }
 
 .popular {
@@ -204,13 +243,35 @@ img {
 
 .card-popular {
     display: flex;
-    height: 90px;
-    width: 150px;
+    height: 100px;
+    width: 400px;
+    margin: 15px;
+    background-color: white;
+    border: 4px solid white;
+    border-radius: 15px;
 }
 
-.card-populard img {
-    height: 30%;
-    width: 30%;
+.card-popular img {
+    height: 100%;
+    width: 40%;
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+}
+
+.card-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.card-content h1 {
+    font-size: 15px;
+    font-weight: bold;
+    margin: 5px;
+}
+
+.card-content div {
+    font-size: 13px;
+    margin-left: 5px;
 }
 
 .activities {
@@ -218,7 +279,7 @@ img {
     justify-content: space-between;
 }
 
-.card-activity {
+.activity {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
