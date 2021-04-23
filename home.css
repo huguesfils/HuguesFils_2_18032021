@@ -316,7 +316,11 @@ header {
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 
-#pomègues #frioul #notre-dame #longchamp {
+#pomegues {
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+#pomegues #frioul #notre-dame #longchamp {
     height: 50px;
     background-color: white;
     border: 4px solid white;
@@ -349,5 +353,5 @@ footer span {
 .about,
 .our-accomodations,
 .support {
-    margin-right: 300px;
+    width: 33%;
 }
