@@ -307,6 +307,7 @@ header {
     flex-direction: column;
     margin: 0;
     padding: 0;
+    justify-content: space-between;
 }
 
 #port {
@@ -357,7 +358,6 @@ header {
     border-radius: 15px;
     min-width: 150px;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-    margin-bottom: 6%;
 }
 
 #pomegues img {
@@ -452,4 +452,10 @@ footer span {
 .our-accomodations,
 .support {
     width: 33%;
+}
+
+@media (max-width: 1200px) {
+    .card-popular {
+        width: 250px;
+    }
 }
