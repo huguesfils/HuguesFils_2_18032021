@@ -183,6 +183,15 @@ header {
     color: #1976d2;
 }
 
+.stars-popular {
+    display: flex;
+    margin-bottom: 0px;
+}
+
+.stars-popular i {
+    color: #1976d2;
+}
+
 .accomodations {
     display: flex;
 }
@@ -219,7 +228,7 @@ header {
 }
 
 .card {
-    height: 150px;
+    height: 200px;
     width: calc(33% - 60px);
     margin: 10px;
     background-color: white;
@@ -463,6 +472,12 @@ footer span {
     width: 33%;
 }
 
+@media (max-width:1450px) {
+    .card {
+        width: calc(50% - 40px)
+    }
+}
+
 @media (max-width: 1200px) {
     .card-popular {
         width: 250px;
@@ -470,8 +485,10 @@ footer span {
 }
 
 @media (max-width: 500px) {
-    header {
+    .margin {
         display: flex;
         flex-direction: column;
     }
 }
+
+// flex-direction column, space betxeen
