@@ -176,7 +176,7 @@ header {
 
 .stars {
     display: flex;
-    margin-bottom: 5px;
+    margin-top: auto;
 }
 
 .stars i {
@@ -185,7 +185,7 @@ header {
 
 .stars-popular {
     display: flex;
-    margin-bottom: 0px;
+    margin-top: auto;
 }
 
 .stars-popular i {
@@ -228,6 +228,8 @@ header {
 }
 
 .card {
+    display: flex;
+    flex-direction: column;
     height: 200px;
     width: calc(33% - 60px);
     margin: 10px;
@@ -274,6 +276,7 @@ header {
     display: flex;
     align-content: flex-start;
     justify-content: space-between;
+    margin-bottom: 30px;
 }
 
 .title-icon label {
@@ -472,6 +475,11 @@ footer span {
     width: 33%;
 }
 
+.small-width-centered {
+    max-width: 1920px;
+    margin: auto;
+}
+
 @media (max-width:1450px) {
     .card {
         width: calc(50% - 40px)
@@ -485,10 +493,7 @@ footer span {
 }
 
 @media (max-width: 500px) {
-    .margin {
-        display: flex;
+    header {
         flex-direction: column;
     }
 }
-
-// flex-direction column, space betxeen
