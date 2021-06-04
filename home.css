@@ -311,6 +311,7 @@ footer {
 }
 
 footer p {
+    cursor: pointer;
     font-size: 17px;
 }
 
