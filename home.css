@@ -1,42 +1,19 @@
-.margin {
-    margin-left: 2em;
-    margin-right: 2em;
-}
-
-body {
-    margin: 0;
-}
-
 * {
     font-family: 'Raleway', sans-serif;
 }
 
-nav {
-    margin-top: 30px;
+body {
+    margin: 0px;
 }
 
 header {
     display: flex;
     justify-content: space-between;
+    margin: 20px;
 }
 
 .head-title {
-    height: 8%;
-    width: 8%;
-    margin-bottom: 40px;
-    margin-top: 30px;
-}
-
-.anchor {
-    color: black;
-    margin-right: 30px;
-    text-decoration: none;
-    padding-top: 28px;
-}
-
-.anchor:focus {
-    border-top: #0065FC solid 2px;
-    color: #0065FC;
+    height: 55px;
 }
 
 .sign {
@@ -44,25 +21,55 @@ header {
     color: #0065FC;
     border: none;
     font-weight: bold;
+    font-size: 20px;
 }
 
-.sign:focus {
+.sign:hover {
     outline: none;
+    cursor: pointer;
 }
 
 .sign:active {
     color: blue;
 }
 
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.anchor {
+    margin-top: 30px;
+    font-size: 20px;
+    width: 50%;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+}
+
+.anchor:focus {
+    margin-bottom: 26px;
+    border-bottom: #0065FC solid 4px;
+    color: #0065FC;
+}
+
+.small-width-centered {
+    max-width: 1920px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
 .top-text {
-    font-size: 1.3em;
+    font-size: 25px;
     font-weight: bold;
-    margin-bottom: 8px;
+    margin-bottom: 15px;
 }
 
 .bottom-text {
-    font-size: 0.9em;
-    margin-bottom: 15px;
+    font-size: 17px;
+    margin-bottom: 40px;
 }
 
 .search {
@@ -71,25 +78,32 @@ header {
     border-radius: 15px;
     align-items: stretch;
     margin-bottom: 30px;
+    width: 100%;
 }
 
 .search div {
+    height: 35px;
+    font-size: 20px;
+    width: 16%;
+    padding-top: 14px;
+    padding-left: 5px;
     font-weight: 900;
-    padding: 10px;
     text-align: center;
     background-color: #eeeeee;
-    border-radius: 15px 0 0 15px;
+    border-radius: 20px 0 0 20px;
     color: black;
 }
 
 .search input {
     margin: 0;
+    width: 76%;
     border: 1px solid #eeeeee;
     border-left: 0;
     border-right: 0;
     padding: 8px;
-    font-weight: normal;
-    font-size: 16px;
+    font-weight: bold;
+    padding-left: 10px;
+    font-size: 21px;
     letter-spacing: 0.15px;
 }
 
@@ -99,44 +113,57 @@ header {
 
 .search button {
     margin: 0;
+    width: 16%;
     background: #1976d2;
-    font-weight: medium;
-    font-size: 16px;
+    font-weight: bold;
+    font-size: 18px;
     letter-spacing: 0.25px;
     color: #ffffff;
     border: none;
     padding: 8px;
-    border-radius: 0 15px 15px 0;
+    border-radius: 0 20px 20px 0;
 }
 
-.search button:focus {
+.search button span {
+    display: none;
+}
+
+.search button:hover {
     outline: none;
     cursor: pointer;
     background-color: #1565c0;
 }
 
-.filters {
-    margin-bottom: 30px;
-    display: flex;
-    flex-direction: row;
-    align-items: stretch;
+#filtre-label {
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 20px;
 }
 
-.filters label {
-    font-weight: bold;
-    padding: 10px;
+.filters {
+    margin-bottom: 10px;
+    margin-top: 15px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .filtre {
     display: flex;
-    border: 2px solid #F2F2F2;
-    margin-left: 20px;
+    border: 3px solid #F2F2F2;
     border-radius: 25px 25px 25px 25px;
+    margin-bottom: 20px;
 }
 
-.filtre>div {
-    width: 40px;
-    height: 40px;
+.filtre:hover {
+    color: #1976d2;
+    cursor: pointer;
+}
+
+.img-filtre {
+    width: 50px;
+    height: 50px;
     border-radius: 50%;
     color: #1976d2;
     background: #DEEBFF;
@@ -146,123 +173,83 @@ header {
     transform: scale(1.1);
 }
 
-.filtre button {
-    border: none;
-    background: #ffffff;
-    border-radius: 0 25px 25px 0;
-    font-weight: bold;
-    padding: 10px;
+.img-filtre i {
+    font-size: 18px;
+    margin-top: 16px;
 }
 
-.filtre button:focus {
-    outline: none;
-    cursor: pointer;
+.btn-filtre {
+    background: #ffffff;
+    font-weight: bold;
+    padding: 15px;
+    border-radius: 0 25px 25px 0;
+}
+
+.btn-filtre span {
+    font-weight: bold;
 }
 
 .infos {
     display: flex;
-}
-
-.infos i {
-    margin-right: 0.5em;
-    color: #1976d2;
-    background-color: white;
-}
-
-.infos label {
     margin-bottom: 30px;
-    font-size: 0.9em;
 }
 
-.stars {
-    display: flex;
-    margin-top: auto;
-}
-
-.stars i {
+.info-i {
     color: #1976d2;
+    height: 26px;
+    width: 34px;
+    border: solid 2px #eeeeee;
+    border-radius: 50%;
+    margin-right: 10px;
 }
 
-.stars-popular {
-    display: flex;
-    margin-top: auto;
+.info-i i {
+    padding-top: 6px;
+    padding-left: 10px;
+    font-size: 14px;
 }
 
-.stars-popular i {
-    color: #1976d2;
+#info-label {
+    font-size: 17px;
+    letter-spacing: -1px;
+    font-weight: normal;
 }
 
-.accomodations {
-    display: flex;
-}
-
-.cadre-left label {
-    font-weight: bold;
-}
-
-.cadre-left,
-.cadre-right {
+#popular-frame {
     background-color: #F2F2F2;
-    border-radius: 15px;
-    padding: 16px;
-}
-
-.cadre-right {
-    margin-left: 50px;
-}
-
-.card-accommodations {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    padding-top: 20px;
-}
-
-.card-accommodations img {
-    height: 60%;
-    width: 100%;
-    border-top-left-radius: 12px;
-    border-top-right-radius: 12px;
-    object-fit: cover;
-}
-
-.card {
     display: flex;
     flex-direction: column;
-    height: 200px;
-    width: calc(33% - 60px);
-    margin: 10px;
-    background-color: white;
-    border: 4px solid white;
-    border-radius: 15px;
-    min-width: 150px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
-.card h1 {
-    font-size: 15px;
+#text-symbol {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 25px;
     font-weight: bold;
-    margin: 5px;
+    padding-top: 30px;
 }
 
-.card div {
-    font-size: 13px;
-    margin-left: 5px;
+#text-symbol i {
+    font-weight: bold;
 }
 
 .popular {
     display: flex;
     flex-direction: column;
+    margin-top: 30px;
 }
 
 .card-popular {
     display: flex;
-    height: 100px;
-    width: 400px;
-    margin: 15px;
+    height: 140px;
     background-color: white;
-    border: 4px solid white;
+    border: 5px solid white;
     border-radius: 15px;
+    margin-bottom: 10px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px;
 }
 
 .card-popular img {
@@ -270,26 +257,13 @@ header {
     width: 40%;
     border-top-left-radius: 12px;
     border-bottom-left-radius: 12px;
-}
-
-.title-icon {
-    display: flex;
-    align-content: flex-start;
-    justify-content: space-between;
-    margin-bottom: 30px;
-}
-
-.title-icon label {
-    font-weight: bold;
-}
-
-.title-icon i {
-    font-size: 20px;
+    object-fit: cover;
 }
 
 .card-content {
     display: flex;
     flex-direction: column;
+    margin-left: 20px;
 }
 
 .card-content h1 {
@@ -303,197 +277,136 @@ header {
     margin-left: 5px;
 }
 
-.activities {
-    margin-top: 40px;
-    width: 100%;
+.stars {
     display: flex;
-    flex-direction: column;
+    margin-top: auto;
 }
 
-.activities label {
-    font-weight: bold;
+.stars i {
+    color: #1976d2;
 }
 
-.activity {
-    margin-top: 20px;
-    margin-bottom: 40px;
-    padding: 0;
+.stars-popular {
     display: flex;
+    margin-top: 55px;
 }
 
-.column {
-    width: 25%;
-    height: 500px;
-    display: flex;
-    flex-direction: column;
-    margin: 0;
-    padding: 0;
-    justify-content: space-between;
-}
-
-#port {
-    width: 25%;
-    background-color: white;
-    border: 4px solid white;
-    border-radius: 15px;
-    min-width: 150px;
-    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-    margin-right: 2%;
-}
-
-#port img {
-    height: 90%;
-}
-
-#port-title {
-    font-weight: bold;
-    padding-top: 15px;
-    padding-left: 10px;
-}
-
-#calanques {
-    margin-left: 2%;
-    margin-right: 2%;
-    width: 25%;
-    background-color: white;
-    border: 4px solid white;
-    border-radius: 15px;
-    min-width: 150px;
-    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-}
-
-#calanques img {
-    height: 90%;
-}
-
-#calanques-title {
-    font-weight: bold;
-    padding-top: 15px;
-    padding-left: 10px;
-}
-
-#pomegues {
-    height: 50%;
-    background-color: white;
-    border: 4px solid white;
-    border-radius: 15px;
-    min-width: 150px;
-    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-}
-
-#pomegues img {
-    height: 80%;
-}
-
-#pomegues-title {
-    font-weight: bold;
-    padding-left: 10px;
-    padding-top: 15px;
-}
-
-#frioul {
-    height: 40%;
-    background-color: white;
-    border: 4px solid white;
-    border-radius: 15px;
-    min-width: 50px;
-    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-}
-
-#frioul img {
-    height: 75%;
-}
-
-#frioul-title {
-    font-weight: bold;
-    padding-left: 10px;
-    padding-top: 10px;
-}
-
-#notre-dame {
-    height: 40%;
-    background-color: white;
-    border: 4px solid white;
-    border-radius: 15px;
-    min-width: 50px;
-    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-    margin-bottom: 6%;
-}
-
-#notre-dame img {
-    height: 75%;
-}
-
-#notre-dame-title {
-    font-weight: bold;
-    padding-left: 10px;
-    padding-top: 10px;
-}
-
-#longchamp {
-    height: 50%;
-    background-color: white;
-    border: 4px solid white;
-    border-radius: 15px;
-    min-width: 50px;
-    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-}
-
-#longchamp img {
-    height: 80%;
-}
-
-#longchamp-title {
-    font-weight: bold;
-    padding-left: 10px;
-    padding-top: 15px;
-}
-
-.activity img {
-    width: 100%;
-    border-top-left-radius: 12px;
-    border-top-right-radius: 12px;
-    object-fit: cover;
+.stars-popular i {
+    color: #1976d2;
 }
 
 footer {
     background-color: #F2F2F2;
     display: flex;
+    flex-direction: column;
     align-content: flex-start;
-    padding: 30px;
+    padding: 20px;
     margin: 0;
 }
 
-footer span {
+.span-footer {
+    font-size: 18px;
     font-weight: bold;
     font-size: large;
+}
+
+footer p {
+    font-size: 17px;
 }
 
 .about,
 .our-accomodations,
 .support {
-    width: 33%;
+    margin-bottom: 20px;
 }
 
-.small-width-centered {
-    max-width: 1920px;
-    margin: auto;
-}
-
-@media (max-width:1450px) {
-    .card {
-        width: calc(50% - 40px)
+@media (min-width: 443px) {
+    nav {
+        width: 300px;
+        position: absolute;
+        top: 6px;
+        right: 122px;
     }
-}
-
-@media (max-width: 1200px) {
-    .card-popular {
-        width: 250px;
+    .anchor {
+        margin-top: 0px;
+        padding-top: 32px;
+        margin-bottom: 0px;
+        padding-bottom: 0px;
     }
-}
-
-@media (max-width: 500px) {
-    header {
-        display: block;
+    .anchor:focus {
+        margin-bottom: 0px;
+        margin-top: -6px;
+        border-bottom: none;
+        border-top: #0065FC solid 3px;
+    }
+    .small-width-centered {
+        margin-top: 40px;
+    }
+    .top-text {
+        margin-bottom: 10px;
+    }
+    .bottom-text {
+        margin-bottom: 30px;
+    }
+    .search {
+        width: 22% !important;
+    }
+    .search button {
+        width: 31%!important;
+    }
+    .search button span {
+        display: block!important;
+        color: white;
+    }
+    .search button i {
+        display: none;
+    }
+    #filtre-label {
+        position: absolute;
+        top: 314px;
+        left: 20px;
+    }
+    .filters {
+        margin-left: 75px;
+        margin-bottom: 30px!important;
+        justify-content: space-around;
+        width: 45%;
+    }
+    .infos {
+        align-items: center;
+    }
+    .info-i {
+        height: 26px;
+        width: 26px;
+    }
+    #text-symbol {
+        font-size: 22px;
+    }
+    #popular-frame {
+        width: 20%;
+        border-radius: 15px;
+    }
+    .card-content h1 {
+        font-size: 18px;
+        font-weight: bold;
+        margin: 5px;
+    }
+    .card-content div {
+        font-size: 15px;
+        margin-left: 5px;
+    }
+    .stars-popular {
+        margin-top: 50px;
+    }
+    .stars-popular i {
+        font-size: 13px;
+    }
+    footer {
+        flex-direction: row;
+    }
+    .about,
+    .our-accomodations,
+    .support {
+        width: 33%;
     }
 }
