@@ -448,6 +448,7 @@ footer p {
         position: relative;
         max-width: 1746px;
         margin: auto;
+        padding-left: 20px;
     }
     .top-text {
         margin-bottom: 10px;
@@ -471,7 +472,7 @@ footer p {
     #filtre-label {
         position: absolute;
         top: 200px;
-        left: 0px;
+        left: 20px;
     }
     .filters {
         margin-left: 75px;
@@ -556,6 +557,7 @@ footer p {
     #activities-frame {
         padding-left: 0px;
         padding-right: 0px;
+        margin-right: 20px;
     }
     #activity-label {
         margin-left: 0px;
