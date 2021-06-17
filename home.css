@@ -221,9 +221,10 @@ nav {
     flex-direction: column;
     padding-left: 20px;
     padding-right: 20px;
+    padding-bottom: 30px;
 }
 
-#text-symbol {
+.text-symbol {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -232,11 +233,11 @@ nav {
     padding-top: 30px;
 }
 
-#text-symbol i {
+.text-symbol i {
     font-weight: bold;
 }
 
-.popular {
+#popular {
     display: flex;
     flex-direction: column;
     margin-top: 30px;
@@ -277,15 +278,6 @@ nav {
     margin-left: 5px;
 }
 
-.stars {
-    display: flex;
-    margin-top: auto;
-}
-
-.stars i {
-    color: #1976d2;
-}
-
 .stars-popular {
     display: flex;
     margin-top: 55px;
@@ -293,6 +285,81 @@ nav {
 
 .stars-popular i {
     color: #1976d2;
+}
+
+#accomodations-frame {
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 30px;
+}
+
+#top-text {
+    font-size: 25px;
+    font-weight: bold;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+#accomodations {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    height: 200px;
+    background-color: white;
+    border: 5px solid white;
+    border-radius: 15px;
+    margin-bottom: 10px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px;
+}
+
+.card img {
+    height: 60%;
+    width: 100%;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    object-fit: cover;
+}
+
+.card-content-acco {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+    margin-top: 5px;
+}
+
+.card-content-acco h1 {
+    font-size: 17px;
+    font-weight: bold;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.card-content-acco div {
+    font-size: 13px;
+    margin-bottom: 7px;
+}
+
+.stars {
+    display: flex;
+}
+
+.stars i {
+    color: #1976d2;
+}
+
+#show-more {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 30px;
 }
 
 footer {
@@ -325,7 +392,7 @@ footer p {
     nav {
         width: 300px;
         position: absolute;
-        top: 6px;
+        top: 0px;
         right: 122px;
     }
     .anchor {
@@ -336,9 +403,12 @@ footer p {
     }
     .anchor:focus {
         margin-bottom: 0px;
-        margin-top: -6px;
+        padding-top: 29px;
         border-bottom: none;
         border-top: #0065FC solid 3px;
+    }
+    .sign {
+        margin-top: -6px;
     }
     .small-width-centered {
         margin-top: 40px;
@@ -402,6 +472,7 @@ footer p {
     .stars-popular i {
         font-size: 13px;
     }
+    #accomodation-frame {}
     footer {
         flex-direction: row;
     }
