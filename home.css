@@ -55,12 +55,6 @@ nav {
     color: #0065FC;
 }
 
-.small-width-centered {
-    max-width: 1920px;
-    padding-left: 20px;
-    padding-right: 20px;
-}
-
 .top-text {
     font-size: 25px;
     font-weight: bold;
@@ -293,17 +287,16 @@ nav {
     flex-direction: column;
     padding-left: 20px;
     padding-right: 20px;
-    padding-bottom: 30px;
 }
 
-#top-text {
+.top-label {
     font-size: 25px;
     font-weight: bold;
     margin-top: 30px;
     margin-bottom: 20px;
 }
 
-#accomodations {
+#accommodations {
     display: flex;
     flex-direction: column;
     margin-top: 30px;
@@ -362,6 +355,47 @@ nav {
     margin-bottom: 30px;
 }
 
+#activities-frame {
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 30px;
+}
+
+#activity {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+}
+
+.card-activity {
+    display: flex;
+    flex-direction: column;
+    height: 200px;
+    background-color: white;
+    border: 5px solid white;
+    border-radius: 15px;
+    margin-bottom: 10px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px;
+}
+
+.card-activity img {
+    height: 73%;
+    width: 100%;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    object-fit: cover;
+}
+
+.card-activity label {
+    font-size: 17px;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-left: 10px;
+}
+
 footer {
     background-color: #F2F2F2;
     display: flex;
@@ -411,7 +445,9 @@ footer p {
         margin-top: -6px;
     }
     .small-width-centered {
-        margin-top: 40px;
+        max-width: 1746px;
+        padding-left: 20px;
+        padding-right: 20px;
     }
     .top-text {
         margin-bottom: 10px;
@@ -454,8 +490,17 @@ footer p {
         font-size: 22px;
     }
     #popular-frame {
-        width: 20%;
+        position: absolute;
+        right: 20px;
+        width: 24%;
+        height: 637px;
         border-radius: 15px;
+        padding-left: 35px;
+        padding-right: 35px;
+        margin-bottom: 50px;
+    }
+    .card-popular {
+        margin-bottom: 40px;
     }
     .card-content h1 {
         font-size: 18px;
@@ -467,12 +512,47 @@ footer p {
         margin-left: 5px;
     }
     .stars-popular {
-        margin-top: 50px;
+        margin-top: 70px;
+    }
+    #special-stars {
+        margin-top: 45px;
     }
     .stars-popular i {
         font-size: 13px;
     }
-    #accomodation-frame {}
+    #accomodations-frame {
+        background-color: #eeeeee;
+        width: 66%;
+        border-radius: 15px;
+        margin-bottom: 50px;
+        padding-bottom: 30px;
+    }
+    #accommodations {
+        display: flex;
+        flex-direction: row;
+        margin-top: 30px;
+        flex-wrap: wrap;
+        margin-left: 20px;
+        margin-right: 20px;
+        justify-content: space-between;
+    }
+    .card-content-acco div {
+        margin-bottom: 15px;
+    }
+    .top-label {
+        margin-bottom: 0px;
+        margin-left: 20px;
+    }
+    #show-more {
+        margin-top: 0px;
+        margin-bottom: 0px;
+        margin-left: 20px;
+    }
+    .card {
+        width: 287px;
+        height: 206px;
+        margin-bottom: 47px;
+    }
     footer {
         flex-direction: row;
     }
