@@ -55,6 +55,11 @@ nav {
     color: #0065FC;
 }
 
+#intro-width {
+    margin-right: 20px;
+    margin-left: 20px
+}
+
 .top-text {
     font-size: 25px;
     font-weight: bold;
@@ -449,6 +454,10 @@ footer p {
         max-width: 1746px;
         margin: auto;
         padding-left: 20px;
+    }
+    #intro-width {
+        margin-right: 0px;
+        margin-left: 0px
     }
     .top-text {
         margin-bottom: 10px;
