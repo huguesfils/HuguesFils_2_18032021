@@ -445,9 +445,9 @@ footer p {
         margin-top: -6px;
     }
     .small-width-centered {
+        position: relative;
         max-width: 1746px;
-        padding-left: 20px;
-        padding-right: 20px;
+        margin: auto;
     }
     .top-text {
         margin-bottom: 10px;
@@ -470,8 +470,8 @@ footer p {
     }
     #filtre-label {
         position: absolute;
-        top: 314px;
-        left: 20px;
+        top: 200px;
+        left: 0px;
     }
     .filters {
         margin-left: 75px;
@@ -552,6 +552,54 @@ footer p {
         width: 287px;
         height: 206px;
         margin-bottom: 47px;
+    }
+    #activities-frame {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    #activity-label {
+        margin-left: 0px;
+    }
+    #activity {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .card-activity {
+        width: 382px;
+    }
+    #port {
+        height: 540px;
+    }
+    #port img {
+        height: 90%;
+    }
+    #parc {
+        height: 540px;
+    }
+    #parc img {
+        height: 90%;
+    }
+    .column {
+        display: flex;
+        flex-direction: column;
+    }
+    #fort {
+        height: 290px;
+        margin-bottom: 40px;
+    }
+    #fort img {
+        height: 82%;
+    }
+    #longchamp {
+        height: 290px;
+        margin-top: 40px;
+    }
+    #longchamp img {
+        height: 82%;
+    }
+    #notre-dame {
+        margin-bottom: 0px;
     }
     footer {
         flex-direction: row;
