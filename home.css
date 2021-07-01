@@ -89,7 +89,7 @@ nav {
     font-weight: 900;
     text-align: center;
     background-color: #eeeeee;
-    border-radius: 20px 0 0 20px;
+    border-radius: 15px 0 0 15px;
     color: black;
 }
 
@@ -102,7 +102,7 @@ nav {
     padding: 8px;
     font-weight: bold;
     padding-left: 10px;
-    font-size: 21px;
+    font-size: 20px;
     letter-spacing: 0.15px;
 }
 
@@ -120,7 +120,7 @@ nav {
     color: #ffffff;
     border: none;
     padding: 8px;
-    border-radius: 0 20px 20px 0;
+    border-radius: 0 15px 15px 0;
 }
 
 .search button span {
@@ -380,8 +380,7 @@ nav {
     flex-direction: column;
     height: 200px;
     background-color: white;
-    border: 5px solid white;
-    border-radius: 15px;
+    border-radius: 25px;
     margin-bottom: 10px;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px;
 }
@@ -389,16 +388,16 @@ nav {
 .card-activity img {
     height: 73%;
     width: 100%;
-    border-top-left-radius: 12px;
-    border-top-right-radius: 12px;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
     object-fit: cover;
 }
 
 .card-activity label {
     font-size: 17px;
     font-weight: bold;
-    margin-top: 20px;
-    margin-left: 10px;
+    margin-top: 16px;
+    margin-left: 16px;
 }
 
 footer {
@@ -427,7 +426,7 @@ footer p {
     margin-bottom: 20px;
 }
 
-@media (min-width: 443px) {
+@media (min-width: 1440px) {
     nav {
         width: 300px;
         position: absolute;
@@ -451,7 +450,7 @@ footer p {
     }
     .small-width-centered {
         position: relative;
-        max-width: 1746px;
+        max-width: 1440px;
         margin: auto;
         padding-left: 20px;
     }
@@ -460,16 +459,22 @@ footer p {
         margin-left: 0px
     }
     .top-text {
+        font-size: 23px;
         margin-bottom: 10px;
     }
     .bottom-text {
         margin-bottom: 30px;
     }
     .search {
-        width: 22% !important;
+        width: 31% !important;
+    }
+    .search div {
+        padding-top: 16px;
     }
     .search button {
         width: 31%!important;
+        font-size: 16px;
+        padding: 16px;
     }
     .search button span {
         display: block!important;
@@ -487,7 +492,7 @@ footer p {
         margin-left: 75px;
         margin-bottom: 30px!important;
         justify-content: space-around;
-        width: 45%;
+        width: 60%;
     }
     .infos {
         align-items: center;
@@ -522,22 +527,22 @@ footer p {
         margin-left: 5px;
     }
     .stars-popular {
-        margin-top: 70px;
+        margin-top: 50px;
     }
     #special-stars {
-        margin-top: 45px;
+        margin-top: 50px;
     }
     .stars-popular i {
         font-size: 13px;
     }
     #accomodations-frame {
         background-color: #eeeeee;
-        width: 66%;
+        width: 63%;
         border-radius: 15px;
         margin-bottom: 50px;
         padding-bottom: 30px;
     }
-    #accommodations {
+    #accomodations {
         display: flex;
         flex-direction: row;
         margin-top: 30px;
@@ -559,7 +564,7 @@ footer p {
         margin-left: 20px;
     }
     .card {
-        width: 287px;
+        width: 249px;
         height: 206px;
         margin-bottom: 47px;
     }
@@ -577,40 +582,51 @@ footer p {
         justify-content: space-between;
     }
     .card-activity {
-        width: 382px;
+        width: 305px;
     }
     #port {
-        height: 540px;
+        height: 445px;
     }
     #port img {
-        height: 90%;
+        height: 89%;
     }
     #parc {
-        height: 540px;
+        height: 445px;
     }
     #parc img {
-        height: 90%;
+        height: 89%;
     }
     .column {
         display: flex;
         flex-direction: column;
+        justify-content: flex-start;
     }
     #fort {
-        height: 290px;
+        height: 235px;
         margin-bottom: 40px;
     }
     #fort img {
-        height: 82%;
+        height: 80%;
+    }
+    #frioul {
+        height: 170px;
+    }
+    #frioul img {
+        height: 71%;
     }
     #longchamp {
-        height: 290px;
+        height: 235px;
         margin-top: 40px;
     }
     #longchamp img {
-        height: 82%;
+        height: 80%;
     }
     #notre-dame {
+        height: 170px;
         margin-bottom: 0px;
+    }
+    #notre-dame img {
+        height: 71%;
     }
     footer {
         flex-direction: row;
