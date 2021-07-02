@@ -1,639 +1,639 @@
 * {
-    font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
 }
 
 body {
-    margin: 0px;
+  margin: 0px;
 }
 
 header {
-    display: flex;
-    justify-content: space-between;
-    margin: 20px;
+  display: flex;
+  justify-content: space-between;
+  margin: 20px;
 }
 
 .head-title {
-    height: 55px;
+  height: 55px;
 }
 
 .sign {
-    background-color: transparent;
-    color: #0065FC;
-    border: none;
-    font-weight: bold;
-    font-size: 20px;
+  background-color: transparent;
+  color: #0065fc;
+  border: none;
+  font-weight: bold;
+  font-size: 20px;
 }
 
 .sign:hover {
-    outline: none;
-    cursor: pointer;
+  outline: none;
+  cursor: pointer;
 }
 
 .sign:active {
-    color: blue;
+  color: blue;
 }
 
 nav {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 
 .anchor {
-    margin-top: 30px;
-    font-size: 20px;
-    width: 50%;
-    text-align: center;
-    text-decoration: none;
-    color: black;
-    margin-bottom: 30px;
-    padding-bottom: 20px;
+  margin-top: 30px;
+  font-size: 20px;
+  width: 50%;
+  text-align: center;
+  text-decoration: none;
+  color: black;
+  margin-bottom: 30px;
+  padding-bottom: 20px;
 }
 
 .anchor:focus {
-    margin-bottom: 26px;
-    border-bottom: #0065FC solid 4px;
-    color: #0065FC;
+  margin-bottom: 26px;
+  border-bottom: #0065fc solid 4px;
+  color: #0065fc;
 }
 
 #intro-width {
-    margin-right: 20px;
-    margin-left: 20px
+  margin-right: 20px;
+  margin-left: 20px;
 }
 
 .top-text {
-    font-size: 25px;
-    font-weight: bold;
-    margin-bottom: 15px;
+  font-size: 25px;
+  font-weight: bold;
+  margin-bottom: 15px;
 }
 
 .bottom-text {
-    font-size: 17px;
-    margin-bottom: 40px;
+  font-size: 17px;
+  margin-bottom: 40px;
 }
 
 .search {
-    display: inline-flex;
-    flex-direction: row;
-    border-radius: 15px;
-    align-items: stretch;
-    margin-bottom: 30px;
-    width: 100%;
+  display: inline-flex;
+  flex-direction: row;
+  border-radius: 15px;
+  align-items: stretch;
+  margin-bottom: 30px;
+  width: 100%;
 }
 
 .search div {
-    height: 35px;
-    font-size: 20px;
-    width: 16%;
-    padding-top: 14px;
-    padding-left: 5px;
-    font-weight: 900;
-    text-align: center;
-    background-color: #eeeeee;
-    border-radius: 15px 0 0 15px;
-    color: black;
+  height: 35px;
+  font-size: 20px;
+  width: 16%;
+  padding-top: 14px;
+  padding-left: 5px;
+  font-weight: 900;
+  text-align: center;
+  background-color: #eeeeee;
+  border-radius: 15px 0 0 15px;
+  color: black;
 }
 
 .search input {
-    margin: 0;
-    width: 76%;
-    border: 1px solid #eeeeee;
-    border-left: 0;
-    border-right: 0;
-    padding: 8px;
-    font-weight: bold;
-    padding-left: 10px;
-    font-size: 20px;
-    letter-spacing: 0.15px;
+  margin: 0;
+  width: 76%;
+  border: 1px solid #eeeeee;
+  border-left: 0;
+  border-right: 0;
+  padding: 8px;
+  font-weight: bold;
+  padding-left: 10px;
+  font-size: 20px;
+  letter-spacing: 0.15px;
 }
 
 .search input:focus {
-    outline: none;
+  outline: none;
 }
 
 .search button {
-    margin: 0;
-    width: 16%;
-    background: #1976d2;
-    font-weight: bold;
-    font-size: 18px;
-    letter-spacing: 0.25px;
-    color: #ffffff;
-    border: none;
-    padding: 8px;
-    border-radius: 0 15px 15px 0;
+  margin: 0;
+  width: 16%;
+  background: #1976d2;
+  font-weight: bold;
+  font-size: 18px;
+  letter-spacing: 0.25px;
+  color: #ffffff;
+  border: none;
+  padding: 8px;
+  border-radius: 0 15px 15px 0;
 }
 
 .search button span {
-    display: none;
+  display: none;
 }
 
 .search button:hover {
-    outline: none;
-    cursor: pointer;
-    background-color: #1565c0;
+  outline: none;
+  cursor: pointer;
+  background-color: #1565c0;
 }
 
 #filtre-label {
-    font-weight: bold;
-    font-size: 20px;
-    margin-bottom: 20px;
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: 20px;
 }
 
 .filters {
-    margin-bottom: 10px;
-    margin-top: 15px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
+  margin-bottom: 10px;
+  margin-top: 15px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .filtre {
-    display: flex;
-    border: 3px solid #F2F2F2;
-    border-radius: 25px 25px 25px 25px;
-    margin-bottom: 20px;
+  display: flex;
+  border: 3px solid #f2f2f2;
+  border-radius: 25px 25px 25px 25px;
+  margin-bottom: 20px;
 }
 
 .filtre:hover {
-    color: #1976d2;
-    cursor: pointer;
+  color: #1976d2;
+  cursor: pointer;
 }
 
 .img-filtre {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    color: #1976d2;
-    background: #DEEBFF;
-    display: inline-block;
-    text-align: center;
-    line-height: 40px;
-    transform: scale(1.1);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  color: #1976d2;
+  background: #deebff;
+  display: inline-block;
+  text-align: center;
+  line-height: 40px;
+  transform: scale(1.1);
 }
 
 .img-filtre i {
-    font-size: 18px;
-    margin-top: 16px;
+  font-size: 18px;
+  margin-top: 16px;
 }
 
 .btn-filtre {
-    background: #ffffff;
-    font-weight: bold;
-    padding: 15px;
-    border-radius: 0 25px 25px 0;
+  background: #ffffff;
+  font-weight: bold;
+  padding: 15px;
+  border-radius: 0 25px 25px 0;
 }
 
 .btn-filtre span {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 .infos {
-    display: flex;
-    margin-bottom: 30px;
+  display: flex;
+  margin-bottom: 30px;
 }
 
 .info-i {
-    color: #1976d2;
-    height: 26px;
-    width: 34px;
-    border: solid 2px #eeeeee;
-    border-radius: 50%;
-    margin-right: 10px;
+  color: #1976d2;
+  height: 26px;
+  width: 34px;
+  border: solid 2px #eeeeee;
+  border-radius: 50%;
+  margin-right: 10px;
 }
 
 .info-i i {
-    padding-top: 6px;
-    padding-left: 10px;
-    font-size: 14px;
+  padding-top: 6px;
+  padding-left: 10px;
+  font-size: 14px;
 }
 
 #info-label {
-    font-size: 17px;
-    letter-spacing: -1px;
-    font-weight: normal;
+  font-size: 17px;
+  letter-spacing: -1px;
+  font-weight: normal;
 }
 
 #popular-frame {
-    background-color: #F2F2F2;
-    display: flex;
-    flex-direction: column;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-bottom: 30px;
+  background-color: #f2f2f2;
+  display: flex;
+  flex-direction: column;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 30px;
 }
 
 .text-symbol {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-size: 25px;
-    font-weight: bold;
-    padding-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 25px;
+  font-weight: bold;
+  padding-top: 30px;
 }
 
 .text-symbol i {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 #popular {
-    display: flex;
-    flex-direction: column;
-    margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
 }
 
 .card-popular {
-    display: flex;
-    height: 140px;
-    background-color: white;
-    border: 5px solid white;
-    border-radius: 15px;
-    margin-bottom: 10px;
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px;
+  display: flex;
+  height: 140px;
+  background-color: white;
+  border: 5px solid white;
+  border-radius: 15px;
+  margin-bottom: 10px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px;
 }
 
 .card-popular img {
-    height: 100%;
-    width: 40%;
-    border-top-left-radius: 12px;
-    border-bottom-left-radius: 12px;
-    object-fit: cover;
+  height: 100%;
+  width: 40%;
+  border-top-left-radius: 12px;
+  border-bottom-left-radius: 12px;
+  object-fit: cover;
 }
 
 .card-content {
-    display: flex;
-    flex-direction: column;
-    margin-left: 20px;
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
 }
 
 .card-content h1 {
-    font-size: 15px;
-    font-weight: bold;
-    margin: 5px;
+  font-size: 15px;
+  font-weight: bold;
+  margin: 5px;
 }
 
 .card-content div {
-    font-size: 13px;
-    margin-left: 5px;
+  font-size: 13px;
+  margin-left: 5px;
 }
 
 .stars-popular {
-    display: flex;
-    margin-top: 55px;
+  display: flex;
+  margin-top: 55px;
 }
 
 .stars-popular i {
-    color: #1976d2;
+  color: #1976d2;
 }
 
 #accomodations-frame {
-    background-color: #ffffff;
-    display: flex;
-    flex-direction: column;
-    padding-left: 20px;
-    padding-right: 20px;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .top-label {
-    font-size: 25px;
-    font-weight: bold;
-    margin-top: 30px;
-    margin-bottom: 20px;
+  font-size: 25px;
+  font-weight: bold;
+  margin-top: 30px;
+  margin-bottom: 20px;
 }
 
 #accommodations {
-    display: flex;
-    flex-direction: column;
-    margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
 }
 
 .card {
-    display: flex;
-    flex-direction: column;
-    height: 200px;
-    background-color: white;
-    border: 5px solid white;
-    border-radius: 15px;
-    margin-bottom: 10px;
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px;
+  display: flex;
+  flex-direction: column;
+  height: 200px;
+  background-color: white;
+  border: 5px solid white;
+  border-radius: 15px;
+  margin-bottom: 10px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px;
 }
 
 .card img {
-    height: 60%;
-    width: 100%;
-    border-top-left-radius: 12px;
-    border-top-right-radius: 12px;
-    object-fit: cover;
+  height: 60%;
+  width: 100%;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  object-fit: cover;
 }
 
 .card-content-acco {
-    display: flex;
-    flex-direction: column;
-    margin-left: 10px;
-    margin-top: 5px;
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+  margin-top: 5px;
 }
 
 .card-content-acco h1 {
-    font-size: 17px;
-    font-weight: bold;
-    margin-top: 5px;
-    margin-bottom: 5px;
+  font-size: 17px;
+  font-weight: bold;
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
 
 .card-content-acco div {
-    font-size: 13px;
-    margin-bottom: 7px;
+  font-size: 13px;
+  margin-bottom: 7px;
 }
 
 .stars {
-    display: flex;
+  display: flex;
 }
 
 .stars i {
-    color: #1976d2;
+  color: #1976d2;
 }
 
 #show-more {
-    font-size: 18px;
-    font-weight: bold;
-    margin-top: 20px;
-    margin-bottom: 30px;
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 20px;
+  margin-bottom: 30px;
 }
 
 #activities-frame {
-    background-color: #ffffff;
-    display: flex;
-    flex-direction: column;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-bottom: 30px;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 30px;
 }
 
 #activity {
-    display: flex;
-    flex-direction: column;
-    margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
 }
 
 .card-activity {
-    display: flex;
-    flex-direction: column;
-    height: 200px;
-    background-color: white;
-    border-radius: 25px;
-    margin-bottom: 10px;
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px;
+  display: flex;
+  flex-direction: column;
+  height: 200px;
+  background-color: white;
+  border-radius: 25px;
+  margin-bottom: 10px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px;
 }
 
 .card-activity img {
-    height: 73%;
-    width: 100%;
-    border-top-left-radius: 25px;
-    border-top-right-radius: 25px;
-    object-fit: cover;
+  height: 73%;
+  width: 100%;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  object-fit: cover;
 }
 
 .card-activity label {
-    font-size: 17px;
-    font-weight: bold;
-    margin-top: 16px;
-    margin-left: 16px;
+  font-size: 17px;
+  font-weight: bold;
+  margin-top: 16px;
+  margin-left: 16px;
 }
 
 footer {
-    background-color: #F2F2F2;
-    display: flex;
-    flex-direction: column;
-    align-content: flex-start;
-    padding: 20px;
-    margin: 0;
+  background-color: #f2f2f2;
+  display: flex;
+  flex-direction: column;
+  align-content: flex-start;
+  padding: 20px;
+  margin: 0;
 }
 
 .span-footer {
-    font-size: 18px;
-    font-weight: bold;
-    font-size: large;
+  font-size: 18px;
+  font-weight: bold;
+  font-size: large;
 }
 
 footer p {
-    cursor: pointer;
-    font-size: 17px;
+  cursor: pointer;
+  font-size: 17px;
 }
 
 .about,
 .our-accomodations,
 .support {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 @media (min-width: 1440px) {
-    nav {
-        width: 300px;
-        position: absolute;
-        top: 0px;
-        right: 122px;
-    }
-    .anchor {
-        margin-top: 0px;
-        padding-top: 32px;
-        margin-bottom: 0px;
-        padding-bottom: 0px;
-    }
-    .anchor:focus {
-        margin-bottom: 0px;
-        padding-top: 29px;
-        border-bottom: none;
-        border-top: #0065FC solid 3px;
-    }
-    .sign {
-        margin-top: -6px;
-    }
-    .small-width-centered {
-        position: relative;
-        max-width: 1440px;
-        margin: auto;
-        padding-left: 20px;
-    }
-    #intro-width {
-        margin-right: 0px;
-        margin-left: 0px
-    }
-    .top-text {
-        font-size: 23px;
-        margin-bottom: 10px;
-    }
-    .bottom-text {
-        margin-bottom: 30px;
-    }
-    .search {
-        width: 31% !important;
-    }
-    .search div {
-        padding-top: 16px;
-    }
-    .search button {
-        width: 31%!important;
-        font-size: 16px;
-        padding: 16px;
-    }
-    .search button span {
-        display: block!important;
-        color: white;
-    }
-    .search button i {
-        display: none;
-    }
-    #filtre-label {
-        position: absolute;
-        top: 200px;
-        left: 20px;
-    }
-    .filters {
-        margin-left: 75px;
-        margin-bottom: 30px!important;
-        justify-content: space-around;
-        width: 60%;
-    }
-    .infos {
-        align-items: center;
-    }
-    .info-i {
-        height: 26px;
-        width: 26px;
-    }
-    #text-symbol {
-        font-size: 22px;
-    }
-    #popular-frame {
-        position: absolute;
-        right: 20px;
-        width: 24%;
-        height: 637px;
-        border-radius: 15px;
-        padding-left: 35px;
-        padding-right: 35px;
-        margin-bottom: 50px;
-    }
-    .card-popular {
-        margin-bottom: 40px;
-    }
-    .card-content h1 {
-        font-size: 18px;
-        font-weight: bold;
-        margin: 5px;
-    }
-    .card-content div {
-        font-size: 15px;
-        margin-left: 5px;
-    }
-    .stars-popular {
-        margin-top: 50px;
-    }
-    #special-stars {
-        margin-top: 50px;
-    }
-    .stars-popular i {
-        font-size: 13px;
-    }
-    #accomodations-frame {
-        background-color: #eeeeee;
-        width: 63%;
-        border-radius: 15px;
-        margin-bottom: 50px;
-        padding-bottom: 30px;
-    }
-    #accomodations {
-        display: flex;
-        flex-direction: row;
-        margin-top: 30px;
-        flex-wrap: wrap;
-        margin-left: 20px;
-        margin-right: 20px;
-        justify-content: space-between;
-    }
-    .card-content-acco div {
-        margin-bottom: 15px;
-    }
-    .top-label {
-        margin-bottom: 0px;
-        margin-left: 20px;
-    }
-    #show-more {
-        margin-top: 0px;
-        margin-bottom: 0px;
-        margin-left: 20px;
-    }
-    .card {
-        width: 249px;
-        height: 206px;
-        margin-bottom: 47px;
-    }
-    #activities-frame {
-        padding-left: 0px;
-        padding-right: 0px;
-        margin-right: 20px;
-    }
-    #activity-label {
-        margin-left: 0px;
-    }
-    #activity {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-    }
-    .card-activity {
-        width: 305px;
-    }
-    #port {
-        height: 445px;
-    }
-    #port img {
-        height: 89%;
-    }
-    #parc {
-        height: 445px;
-    }
-    #parc img {
-        height: 89%;
-    }
-    .column {
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-    }
-    #fort {
-        height: 235px;
-        margin-bottom: 40px;
-    }
-    #fort img {
-        height: 80%;
-    }
-    #frioul {
-        height: 170px;
-    }
-    #frioul img {
-        height: 71%;
-    }
-    #longchamp {
-        height: 235px;
-        margin-top: 40px;
-    }
-    #longchamp img {
-        height: 80%;
-    }
-    #notre-dame {
-        height: 170px;
-        margin-bottom: 0px;
-    }
-    #notre-dame img {
-        height: 71%;
-    }
-    footer {
-        flex-direction: row;
-    }
-    .about,
-    .our-accomodations,
-    .support {
-        width: 33%;
-    }
+  nav {
+    width: 300px;
+    position: absolute;
+    top: 0px;
+    right: 122px;
+  }
+  .anchor {
+    margin-top: 0px;
+    padding-top: 32px;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+  }
+  .anchor:focus {
+    margin-bottom: 0px;
+    padding-top: 29px;
+    border-bottom: none;
+    border-top: #0065fc solid 3px;
+  }
+  .sign {
+    margin-top: -6px;
+  }
+  .small-width-centered {
+    position: relative;
+    max-width: 1440px;
+    margin: auto;
+    padding-left: 20px;
+  }
+  #intro-width {
+    margin-right: 0px;
+    margin-left: 0px;
+  }
+  .top-text {
+    font-size: 23px;
+    margin-bottom: 10px;
+  }
+  .bottom-text {
+    margin-bottom: 30px;
+  }
+  .search {
+    width: 31% !important;
+  }
+  .search div {
+    padding-top: 16px;
+  }
+  .search button {
+    width: 31% !important;
+    font-size: 16px;
+    padding: 16px;
+  }
+  .search button span {
+    display: block !important;
+    color: white;
+  }
+  .search button i {
+    display: none;
+  }
+  #filtre-label {
+    position: absolute;
+    top: 200px;
+    left: 20px;
+  }
+  .filters {
+    margin-left: 75px;
+    margin-bottom: 30px !important;
+    justify-content: space-around;
+    width: 60%;
+  }
+  .infos {
+    align-items: center;
+  }
+  .info-i {
+    height: 26px;
+    width: 26px;
+  }
+  #text-symbol {
+    font-size: 22px;
+  }
+  #popular-frame {
+    position: absolute;
+    right: 20px;
+    width: 24%;
+    height: 637px;
+    border-radius: 15px;
+    padding-left: 35px;
+    padding-right: 35px;
+    margin-bottom: 50px;
+  }
+  .card-popular {
+    margin-bottom: 40px;
+  }
+  .card-content h1 {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 5px;
+  }
+  .card-content div {
+    font-size: 15px;
+    margin-left: 5px;
+  }
+  .stars-popular {
+    margin-top: 50px;
+  }
+  #special-stars {
+    margin-top: 50px;
+  }
+  .stars-popular i {
+    font-size: 13px;
+  }
+  #accomodations-frame {
+    background-color: #eeeeee;
+    width: 63%;
+    border-radius: 15px;
+    margin-bottom: 50px;
+    padding-bottom: 30px;
+  }
+  #accomodations {
+    display: flex;
+    flex-direction: row;
+    margin-top: 30px;
+    flex-wrap: wrap;
+    margin-left: 20px;
+    margin-right: 20px;
+    justify-content: space-between;
+  }
+  .card-content-acco div {
+    margin-bottom: 15px;
+  }
+  .top-label {
+    margin-bottom: 0px;
+    margin-left: 20px;
+  }
+  #show-more {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 20px;
+  }
+  .card {
+    width: 249px;
+    height: 206px;
+    margin-bottom: 47px;
+  }
+  #activities-frame {
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-right: 20px;
+  }
+  #activity-label {
+    margin-left: 0px;
+  }
+  #activity {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .card-activity {
+    width: 305px;
+  }
+  #port {
+    height: 445px;
+  }
+  #port img {
+    height: 89%;
+  }
+  #parc {
+    height: 445px;
+  }
+  #parc img {
+    height: 89%;
+  }
+  .column {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  #fort {
+    height: 235px;
+    margin-bottom: 40px;
+  }
+  #fort img {
+    height: 80%;
+  }
+  #frioul {
+    height: 170px;
+  }
+  #frioul img {
+    height: 71%;
+  }
+  #longchamp {
+    height: 235px;
+    margin-top: 40px;
+  }
+  #longchamp img {
+    height: 80%;
+  }
+  #notre-dame {
+    height: 170px;
+    margin-bottom: 0px;
+  }
+  #notre-dame img {
+    height: 71%;
+  }
+  footer {
+    flex-direction: row;
+  }
+  .about,
+  .our-accomodations,
+  .support {
+    width: 33%;
+  }
 }
